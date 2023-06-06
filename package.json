@@ -1,0 +1,24 @@
+{
+  "name": "@scoheart/axios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/bundle.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sco-org/sco-axios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sco-org/sco-axios/issues"
+  },
+  "homepage": "https://github.com/sco-org/sco-axios#readme",
+  "dependencies": {
+    "rollup": "^3.23.0"
+  }
+}
