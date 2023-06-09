@@ -15,16 +15,15 @@
         console.log(this)
 
         axios.interceptors.request.use(function (config) {
-            console.log("req inter1")
+            console.log("req inter1 success")
             return config
         }, function () {
             console.log("req inter1 error")
             return Promise.reject("Sdf")
-
         })
 
         axios.interceptors.request.use(function (config) {
-            console.log("req inter2")
+            console.log("req inter2 success")
             return config
         }, function () {
             console.log("req inter2 error")
@@ -32,7 +31,7 @@
         })
 
         axios.interceptors.response.use(function (response) {
-            console.log("response inter1")
+            console.log("response inter1 success")
             return response
         }, function () {
             console.log("response inter1 error")
@@ -40,33 +39,22 @@
         })
 
         axios.interceptors.response.use(function (response) {
-            console.log("response inter2")
+            console.log("response inter2 success")
             return response
 
         }, function () {
             console.log("response inter2 error")
             return Promise.reject("Sdf")
-
         })
 
-        const post = axios.get("http://localhost:8081/student")
+        const post = axios.get("http://localhost:8081/js")
 
 
         post.then(res => {
-            console.log(res)
+            console.log("res", res)
         }, reason => {
-            console.log(reason)
+            console.log("reason", reason)
         })
-
-        let xhr = new XMLHttpRequest()
-
-        xhr.open()
-
-        xhr.send()
-
-        console.log(xhr)
-       
-
 
     </script>
 
